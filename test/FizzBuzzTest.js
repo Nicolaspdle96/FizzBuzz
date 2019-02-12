@@ -13,6 +13,9 @@ describe('isFizz',function () {
 
 describe('isBuzz',function () {
     it('WhenNumberIsFiveThenReturnTrue',function() {
-        expect(isFizz(3)).to.equal(true);
+        expect(isBuzz(5)).to.equal(true);
+    });
+    it('WhenNumberIsSixThenReturnFalse',function() {
+        expect(isBuzz(6)).to.equal(false);
     });
 });
