@@ -1,7 +1,7 @@
 function fizzbuzz () {
   for(i = 0; i < 100; i++) 
   {
-      if (i % 3 === 0 && i % 5 === 0)
+      if (isFizzBuzz(i))
       {
         console.log("FizzBuzz");                    
       }
@@ -26,6 +26,10 @@ isFizz = function(number) {
 
 isBuzz = function(number) {
   return number % 5 == 0;
+}
+
+isFizzBuzz = function(number) {
+  return number % 3 == 0 && number % 5 == 0;
 }
 
 

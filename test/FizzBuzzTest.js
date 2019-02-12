@@ -19,3 +19,12 @@ describe('isBuzz',function () {
         expect(isBuzz(6)).to.equal(false);
     });
 });
+
+describe('isFizzBuzz',function () {
+    it('WhenNumberIsFifteenThenReturnTrue',function() {
+        expect(isFizzBuzz(15)).to.equal(true);
+    });
+    it('WhenNumberIsSevenThenReturnFalse',function() {
+        expect(isFizzBuzz(7)).to.equal(false);
+    });
+});
