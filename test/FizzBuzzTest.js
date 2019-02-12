@@ -10,3 +10,9 @@ describe('isFizz',function () {
         expect(isFizz(5)).to.equal(false);
     });
 });
+
+describe('isBuzz',function () {
+    it('WhenNumberIsFiveThenReturnTrue',function() {
+        expect(isFizz(3)).to.equal(true);
+    });
+});
