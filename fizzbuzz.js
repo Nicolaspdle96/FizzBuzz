@@ -6,7 +6,7 @@ function fizzbuzz () {
         console.log("FizzBuzz");                    
       }
       else 
-        if(i % 3 === 0)
+        if(isFizz(i))
         {
           console.log("Fizz");
         }
@@ -19,5 +19,10 @@ function fizzbuzz () {
             console.log(i);
   }
 }
+
+isFizz = function(number) {
+  return number % 3 == 0;
+}
+
 
 fizzbuzz()
