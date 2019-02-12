@@ -1,23 +1,16 @@
-function fizzbuzz () {
-  for(i = 0; i < 100; i++) 
-  {
+fizzbuzz = function(limit) {
+  let sequence = "";
+  for(i = 1; i <= limit; i++) {
       if (isFizzBuzz(i))
-      {
-        console.log("FizzBuzz");                    
-      }
-      else 
-        if(isFizz(i))
-        {
-          console.log("Fizz");
-        }
-        else 
-          if(isBuzz(i))
-          {
-            console.log("Buzz");
-          }
-          else
-            console.log(i);
+        sequence += "FizzBuzz";         
+      else if(isFizz(i))
+        sequence += "Fizz";
+      else if(isBuzz(i))
+        sequence += "Buzz";
+      else
+        sequence += i ;
   }
+  return sequence;
 }
 
 isFizz = function(number) {
@@ -33,4 +26,4 @@ isFizzBuzz = function(number) {
 }
 
 
-fizzbuzz()
+console.log(fizzbuzz(15));

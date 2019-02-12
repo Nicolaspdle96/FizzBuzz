@@ -28,3 +28,9 @@ describe('isFizzBuzz',function () {
         expect(isFizzBuzz(7)).to.equal(false);
     });
 });
+
+/*describe('createSequence',function () {
+    it('createCorrectSequenceToNumberOne',function() {
+        expect(fizzbuzz(1)).to.equal("1");
+    });
+});*/
